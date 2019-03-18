@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import classes from './App.css';
-import Person from './Person/Person';
-import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
+import Person from '../components/Persons/Person/Person';
+import ErrorBoundary from '../components/ErrorBoundary/ErrorBoundary';
 
 class App extends Component {
   state = {
@@ -83,7 +83,7 @@ class App extends Component {
         <button
           className={btnClass}
           onClick={this.togglePersonsHandler}>Toggle Persons</button>  
-          {persons}
+        {persons}
       </div>
     );
   }
